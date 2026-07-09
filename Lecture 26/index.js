@@ -21,10 +21,13 @@ class Students extends Person {
         super(name, age, hobbies);
         this.grade = grade;
     }
+    introduce() {
+        return `hi i am ${this.name} and i am ${this.age} years old and i am in grade ${this.grade} and i love ${this.hobbies.join(",")}.`;
+    }
 }
 //creating new instance of a class
 const person1 = new Person("kanishk", 22, ["cricket", "football"]);
-const student1 = new Students("pawni", 11, ["sleeping", "eating"], 34);
+const student1 = new Students("pawni", 11, ["sleeping", "eating"], 10);
 const person3 = new Person("rajesh", 24, ["badminton", "hockey"]);
 console.log(student1.introduce());
 //# sourceMappingURL=index.js.map
